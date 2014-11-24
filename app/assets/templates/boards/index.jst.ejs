@@ -1,0 +1,18 @@
+<span class="glyphicon glyphicon-user"></span>
+<span class="title">My Boards</span>
+
+<ul class="board-list">
+	<% boards.each(function (board) { %>
+		<li>
+			<a class="btn btn-primary btn-xlarge" 
+			   href ="#/boards/<%= board.id %>"" >
+				<%= board.get('title') %>
+			</a>
+		</li>
+	<% }) %>
+	<li id="new-board">
+		<a id="new" class="btn btn-primary new" href ="#/boards/new">
+			Create New Board...
+		</a>
+	</li>
+</ul>

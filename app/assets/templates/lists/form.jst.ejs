@@ -1,0 +1,15 @@
+<form id="new-list-form">
+	<input type="hidden" 
+		   name="list[board_id]" 
+		   value="<%= board.escape('id') %>">
+	<input type="text" 
+	       name="list[title]" 
+	       class="form-control"
+	       placeholder="Add a list...">
+	<input type="submit" value="Save" class="btn btn-success">
+	<a class="remove-form" href="#/">
+		<span class="glyphicon glyphicon-remove" 
+			  style="vertical-align:middle">
+		</span>
+	</a>
+</form>

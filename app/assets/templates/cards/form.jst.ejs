@@ -1,0 +1,13 @@
+<form id="new-card-form">
+	<input type="hidden" 
+		   name="card[list_id]" 
+		   value="<%= list.escape('id') %>">
+	<textarea name="card[title]" 
+	          class="form-control"></textarea>
+	<input type="submit" value="Add" class="btn btn-success">
+	<a class="card-remove-form" href="#/" data-id="<%= list.escape('id') %>">
+		<span class="glyphicon glyphicon-remove" 
+			  style="vertical-align:middle">
+		</span>
+	</a>
+</form>
